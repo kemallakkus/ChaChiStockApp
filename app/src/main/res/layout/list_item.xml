@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_margin="@dimen/_4sdp"
+    android:id="@+id/listItemBack"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        android:padding="@dimen/_10sdp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="Deneme"
+            android:id="@+id/listProductName"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_20ssp">
+        </TextView>
+        <TextView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:text="Deneme"
+            android:id="@+id/listProductQuantity"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp">
+        </TextView>
+        <TextView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:text="Deneme"
+            android:id="@+id/listProductPrice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp">
+        </TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

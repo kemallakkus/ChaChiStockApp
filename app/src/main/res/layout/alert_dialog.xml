@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adet Giriniz"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/item_text_color">
+    </TextView>
+    <EditText
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:paddingStart="@dimen/_3sdp"
+        android:inputType="number"
+        android:layout_margin="@dimen/_5sdp"
+        android:textColor="@color/edit_text_color"
+        android:background="@drawable/table_background"
+        android:id="@+id/addQuantityhey">
+
+    </EditText>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OLUŞTUR"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/button_back"
+        android:id="@+id/alertButton">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>

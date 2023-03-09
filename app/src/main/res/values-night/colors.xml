@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#FFFFFF</color>
+    <color name="text_white">#000000</color>
+    <color name="sheet_backround_color">#2C2C2C</color>
+    <color name="backround_color">#FFFFFF</color>
+    <color name="orange">#FF3D00</color>
+    <color name="button_text_color">#000000</color>
+    <color name="toolbar_color">#2C2C2C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="table_back">#000000</color>
+    <color name="item_text_color">#FFFAFA</color>
+    <color name="list_backround_color">#686868</color>
+    <color name="icon_color">#ffffff</color>
+    <color name="edit_text_color">#4B4B4B</color>
+</resources>

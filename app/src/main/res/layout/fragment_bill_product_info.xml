@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    android:gravity="center_vertical"
+    tools:context=".fragments.BillProductInfoFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="İrsaliye Bilgileri"
+            android:gravity="center"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="@drawable/down_arrow">
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adres"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="@dimen/_3sdp"
+        android:gravity="top"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:maxLines="3"
+        android:textColor="@color/edit_text_color"
+        android:background="@drawable/table_background"
+        android:id="@+id/adressInfo">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Telefon Numarası"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:paddingHorizontal="@dimen/_3sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/edit_text_color"
+        android:maxLines="1"
+        android:background="@drawable/table_background"
+        android:id="@+id/phoneInfo">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Mail Adresi"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:maxLines="3"
+        android:paddingHorizontal="@dimen/_3sdp"
+        android:textColor="@color/edit_text_color"
+        android:background="@drawable/table_background"
+        android:id="@+id/mailInfo">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Tarih"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:maxLines="3"
+        android:padding="@dimen/_3sdp"
+        android:background="@drawable/table_background"
+        android:id="@+id/enthusiasm">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/edit_text_color"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Logonu YÜkle"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/logoYukle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_background"
+            android:gravity="center"
+            android:text="LOGONU YÜKLE"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27ssp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/logo"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent">
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

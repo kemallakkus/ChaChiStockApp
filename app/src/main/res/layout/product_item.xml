@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_7sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:id="@+id/linearBack"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/chachi_orj"
+            android:id="@+id/productImage"
+            >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ÜRÜN ADI"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                android:id="@+id/productUrunAdi"
+                android:textColor="@color/item_text_color">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adet"
+                android:textSize="@dimen/_18ssp"
+                android:id="@+id/productAdet"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textColor="@color/item_text_color">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/productFiyat"
+                android:text="Ürün Fiyat"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                android:textColor="@color/item_text_color">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/add_backround"
+                android:padding="@dimen/_4sdp"
+                android:text="Adet Belirle"
+                android:textColor="@color/item_text_color"
+                android:id="@+id/adetBelirle"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/add_backround"
+                android:padding="@dimen/_4sdp"
+                android:text="Listeye Ekle"
+                android:textColor="@color/item_text_color"
+                android:textStyle="bold"
+                android:id="@+id/addProductToList"
+                android:textSize="@dimen/_14ssp">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

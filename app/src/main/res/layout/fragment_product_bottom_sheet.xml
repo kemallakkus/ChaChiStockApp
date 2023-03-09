@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProductBottomSheet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/table_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:textColor="@color/text_color"
+            android:background="@color/sheet_backround_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:text="Ürün Ekle"
+            android:textStyle="bold"
+            android:textSize="@dimen/_25ssp"
+
+            android:id="@+id/sheetTaskText">
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:hint="Ürün Kodu"
+                android:textColor="@color/edit_text_color"
+                android:maxLength="10"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:background="@drawable/table_background"
+                android:id="@+id/productCode"
+                >
+
+            </EditText>
+            <EditText
+                android:layout_width="@dimen/_130sdp"
+                android:textColor="@color/edit_text_color"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/productPrice"
+                android:drawableEnd="@drawable/dollar"
+                android:hint="Ürün Fiyatı"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:background="@drawable/table_background">
+
+            </EditText>
+            <EditText
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:inputType="number"
+                android:textColor="@color/edit_text_color"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:hint="Ürün Adedi"
+                android:id="@+id/productQuantity"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:background="@drawable/table_background">
+
+            </EditText>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:id="@+id/imageProduct">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Resmi Yükle"
+                android:background="@drawable/table_background"
+                android:textSize="@dimen/_30ssp"
+                android:gravity="center"
+                android:textColor="@color/black">
+
+            </TextView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/image">
+            </ImageView>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:id="@+id/createProdduct"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/button_text_color"
+        android:background="@drawable/button_back"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Kaydet">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+</LinearLayout>

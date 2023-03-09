@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChaChiStockApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="adres">Deneme Mah. deneme cad. deneme sok 3/43 Fatih/İSTANBUL </string>
+    <string name="telefon">Tel:0 222 343 44 12</string>
+    <string name="mail">mail:deneme@gmail.com</string>
+    <string name="vergi">Kasımpaşa V.D XXX XXX XXXXX</string>
+</resources>
